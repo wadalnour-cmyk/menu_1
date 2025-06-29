@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fdf6f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #8b4513;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.menu {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #8b4513;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed #ccc;
+}
+
+.item:last-child {
+  border-bottom: none;
+}
+
+.item span {
+  flex: 1 1 100%;
+  margin-bottom: 0.2rem;
+}
+
+.price {
+  text-align: left;
+  color: #8b4513;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ✅ تحسين العرض على الأجهزة الصغيرة */
+@media (min-width: 500px) {
+  .item span {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .price {
+    text-align: left;
+  }
+}
